@@ -1,4 +1,4 @@
-h1 {
+#pageHeader {
     font-family: "Courier New", 'Times New Roman', sans-serif;
     background-color: lightblue;
     text-align: center;
@@ -72,4 +72,63 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Layout for Project Pages */
+#projectTitle {
+    font-family: "Courier New", 'Times New Roman', sans-serif;
+    text-align: center;
+    font-size: 300%;
+}
+
+/*Stat section*/
+div.statBox {
+    width: 90%;
+    overflow: auto;
+}
+
+div.statBox div {
+    width:10%;
+    float: left;
+    background-color: lightblue;
+    margin-left: 20px;
+}
+
+div.statBox div p {
+    font-family: "Helvetica", 'Times New Roman', sans-serif;
+    text-align: center;
+    font-size: inherit;
+}
+
+/*Description column*/
+.description {
+    float: left;
+    width: 50%;
+    padding-left:40px;
+    background-color: lightgray;
+    margin-left: 20px;
+}
+
+#projectLinks {
+    font-family: "Helvetica", 'Times New Roman', sans-serif;
+    text-align: left;
+    border: 2px solid yellow;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+#projectDescription {
+    font-family: "Helvetica", 'Times New Roman', sans-serif;
+    text-align: left;
+}
+
+/*Image column*/
+.thumbnail {
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+}
+
+#projectThumbnail {
+    border: 10px solid gray;
 }
