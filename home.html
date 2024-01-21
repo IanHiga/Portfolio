@@ -3,6 +3,11 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
     <title>Ian Higa's Portfolio</title>
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
 </head>
 
 
@@ -17,13 +22,49 @@
             <div class="dropdown-content">
                 <a href="candycannoneer.html">Candy Cannoneer</a>
                 <a href="nightterror.html">Night Terror</a>
-                <a href="test.asp">Project 3</a>
+                <a href="lostinswhall.html">Lost in Southwest Hall</a>
             </div>
         </li>
         <li><a href="contact.html">Contact Me</a></li>
     </ul>
     <!--Header Ends Here-->
+
+    <!--Slideshow - Home Page Only-->
+    <div class="slideShow" style="width:50%">
+        <img class="mySlides" src="images/img_project1.png" style="width:100%">
+        <div class="slideCaption">
+            <a href="candycannoneer.html">Candy Cannoneer</a>
+        </div>
+        <img class="mySlides" src="images/img_project2.png" style="width:100%">
+        <div class="slideCaption">
+            <a href="nightterror.html">Night Terror</a>
+        </div>
+        <img class="mySlides" src="images/img_project3.png" style="width:100%">
+        <div class="slideCaption">
+            <a href="lostinswhall.html">Lost in Southwest Hall</a>
+        </div>
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var y = document.getElementsByClassName("slideCaption");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                y[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            y[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
-
-
 </html>
